@@ -11,7 +11,7 @@ ifndef WORKING_TREE
 endif
 
 clean:
-	rm -rf node_modules/ *.tgz
+	rm -rf node_modules/ *.tgz *.tar.gz
 
 $(ARTIFACT): clean ensure-clean-working-tree
 	yarn install --pure-lockfile && \
