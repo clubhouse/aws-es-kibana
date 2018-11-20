@@ -39,3 +39,4 @@ node_modules
 
 # Build Artifact
 *.tgz
+*.tar.gz
