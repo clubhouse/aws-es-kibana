@@ -14,7 +14,7 @@ clean:
 	rm -rf node_modules/ *.tgz *.tar.gz
 
 $(ARTIFACT): clean ensure-clean-working-tree
-	yarn install --pure-lockfile && \
+	yarn install && \
 	tar czfv $(ARTIFACT) .
 
 artifact: $(ARTIFACT)
