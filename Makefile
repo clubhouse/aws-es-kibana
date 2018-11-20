@@ -1,7 +1,7 @@
 .PHONY: deploy artifact clean ensure-clean-working-tree
 
 REVISION=$(shell git rev-parse --verify --short HEAD)
-ARTIFACT="aws-es-kibana-proxy-$(REVISION).tar.gz"
+ARTIFACT="aws-es-proxy-$(REVISION).tar.gz"
 WORKING_TREE=$(strip $(shell git status --porcelain))
 
 ensure-clean-working-tree:
